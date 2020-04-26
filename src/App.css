@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head {
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 700px;
+    height: 600px;
+    box-shadow: 0 20px 10px 20px rgba(0, 0, 0, .5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head h1 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 60px;
+    margin: 0 auto;
+    color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.taskAction {
+    display: flex;
+    justify-content: space-around;
 }
-
-.App-link {
-  color: #61dafb;
+.taskAction div {
+    color: white;
+    font-size: 12px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.task div {
+    margin: 5px 20px;
+}
+.task div button {
+    background: #1d98a8;
+    margin: 0 3px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+}
+.input {
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+}
+.btn {
+    margin: 10px;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: #ee65bb;
+}
+.editInput {
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: red;
+}
+.date {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: small;
+    color: #eeeeee;
+    margin-right: 40px;
 }
